@@ -18,32 +18,6 @@ This application was built as a practice project to deepen understanding and app
 - JavaScript/JSX: Employed for logic and component design.
 - SCSS: Used to style every component
 
-## Installation
-
-1. Clone the repository to your local machine: 
-   ```
-   git clone https://github.com/your-username/your-project.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd your-project
-   ```
-
-3. Install dependencies:
-   ```
-   npm install
-   ```
-
-## Usage
-
-1. Start the application:
-   ```
-   npm start
-   ```
-
-2. Open your browser and go to `http://localhost:3000` (or a different port if configured within the application) to view the app.
-
 ## Customization and Further Development
 
 This application serves as a practice project and can be customized and extended for further exercises. Some suggestions for further development include:
@@ -51,7 +25,6 @@ This application serves as a practice project and can be customized and extended
 - Implementation of advanced form data validations.
 - Addition of extra form elements and their state management.
 - Integration of React routers for multiple pages.
-- Testing the application using Jest/Enzyme or another testing framework.
 
 ## Contribution
 
