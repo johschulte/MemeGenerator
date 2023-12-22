@@ -1,4 +1,4 @@
-import styles from "../styles/Form.Module.scss";
+import styles from "../styles/Form.module.scss";
 
 const Form = ({ handleClick, handleChange, formData }) => {
   return (

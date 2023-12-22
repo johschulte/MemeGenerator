@@ -1,4 +1,4 @@
-import styles from "../styles/Meme.Module.scss";
+import styles from "../styles/Meme.module.scss";
 
 const Meme = ({ formData }) => {
   return (
