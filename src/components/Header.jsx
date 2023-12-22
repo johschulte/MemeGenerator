@@ -1,4 +1,4 @@
-import styles from "../styles/Header.Module.scss";
+import styles from "../styles/Header.module.scss";
 import trollFace from "../assets/troll-face.png";
 
 const Header = () => {
