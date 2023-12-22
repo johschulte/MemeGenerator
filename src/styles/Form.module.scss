@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter&family=Karla&display=swap');
+
+button{
+    background: rgb(103,34,128);
+    background: linear-gradient(90deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
+    padding: 0.6rem 10rem;
+    color: #fff;
+    border-radius: 0.3125rem;
+    border: none;
+    
+}
+
+.form{
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    margin: 2rem;
+    color: var(--gray-700, #374151);
+    font-family: Karla;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.input1, .input2{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+
+}
+
+.input1 input, .input2 input{
+    padding: 0.5rem 0.7rem;
+    margin-top: 0.2rem;
+    border-radius: 0.307rem;
+    border: 0.819px solid var(--gray-300, #D1D5DB);
+    background: var(--white, #FFF);
+    box-shadow: 0px 0.819px 1.637px 0px rgba(0, 0, 0, 0.05);
+    
+}
+
+.input1 label, .input2 label{
+    font-size: 0.9rem;
+}
+
+.inputs{
+    display: flex;
+    width: 100;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.meme{
+    margin: 2rem 0;
+    width: 100%;
+}
