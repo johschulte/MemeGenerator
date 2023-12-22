@@ -1,5 +1,3 @@
-Absolutely, here's the README file for your React app, MemeGen, focused on practicing React forms, useState, and useEffect:
-
 ---
 
 # MemeGen - React Practice App for Forms, useState, and useEffect
