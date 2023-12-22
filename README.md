@@ -34,4 +34,3 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ---
 
-Feel free to tailor this README template to include specific instructions, project structure, code examples, or use cases as needed for your MemeGen application.
