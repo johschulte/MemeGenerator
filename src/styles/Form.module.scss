@@ -15,12 +15,13 @@ button{
     display: flex;
     flex-flow: column;
     width: 90%;
-    margin: 2rem;
+    margin: 2rem auto;
     color: var(--gray-700, #374151);
     font-family: Karla;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;
+    max-width: 550px;
 }
 
 .input1, .input2{
