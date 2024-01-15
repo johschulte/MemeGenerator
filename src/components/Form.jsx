@@ -1,6 +1,18 @@
 import styles from "../styles/Form.module.scss";
+import domtoimage from "dom-to-image";
 
-const Form = ({ handleClick, handleChange, formData }) => {
+const Form = ({ handleClick, handleChange, formData, imgFromDom }) => {
+  const domToImg = () => {
+    domtoimage
+      .toJpeg(imgFromDom.current, { quality: 0.95 })
+      .then(function (dataUrl) {
+        var link = document.createElement("a");
+        link.download = "my-image-name.jpeg";
+        link.href = dataUrl;
+        link.click();
+      });
+  };
+
   return (
     <form className={styles.form}>
       <div className={styles.inputs}>
@@ -27,7 +39,18 @@ const Form = ({ handleClick, handleChange, formData }) => {
           />
         </div>
       </div>
-      <button onClick={handleClick}>Get a new meme image 🖼</button>
+      <div className={styles.buttonContainer}>
+        <button onClick={handleClick}>Get a new meme image 🖼</button>
+        <button
+          className={styles.downloadbutton}
+          onClick={(e) => {
+            e.preventDefault();
+            domToImg();
+          }}
+        >
+          Download
+        </button>
+      </div>
     </form>
   );
 };

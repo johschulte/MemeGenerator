@@ -4,12 +4,21 @@
 button{
     background: rgb(103,34,128);
     background: linear-gradient(90deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
-    padding: 0.6rem 10rem;
+    padding: 0.6rem 3rem;
     color: #fff;
     border-radius: 0.3125rem;
     border: none;
     
 }
+
+.buttonContainer{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+
+}
+.buttonContainer *{
+    width: 50%;}
 
 .form{
     display: flex;

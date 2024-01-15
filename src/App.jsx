@@ -4,7 +4,7 @@ import Form from "./components/Form";
 import Meme from "./components/Meme";
 import memesData from "./memesData";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function App() {
   const [allMemes, setAllMemes] = useState(memesData);
@@ -14,6 +14,8 @@ function App() {
     bottom: "",
     url: "",
   });
+
+  const imgFromDom = useRef(null);
 
   useEffect(() => {
     fetch("https://api.imgflip.com/get_memes")
@@ -27,6 +29,14 @@ function App() {
     setFormData((prev) => ({ ...prev, url: allMemes[rndNumber].url }));
   };
 
+  const resetPage = () => {
+    setFormData({
+      top: "",
+      bottom: "",
+      url: "",
+    });
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -35,17 +45,16 @@ function App() {
     }));
   };
 
-  console.log(formData);
-
   return (
     <>
-      <Header />
+      <Header resetPage={resetPage} />
       <Form
         handleClick={handleClick}
         handleChange={handleChange}
         formData={formData}
+        imgFromDom={imgFromDom}
       />
-      <Meme formData={formData} />
+      <Meme formData={formData} ref={imgFromDom} />
     </>
   );
 }
